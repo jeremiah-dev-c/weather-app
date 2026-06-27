@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="app">
+
+    <header id="header">
+      <div id="header-text">
+        <h1 id="header-title">Weer</h1>
+        <p id="date-label"></p>
+      </div>
+      <button id="refresh-btn">🔄</button>
+    </header>
+
+    <div id="add-city">
+      <input id="city-input" type="text" placeholder="Stad toevoegen..." />
+      <button id="add-city-btn">+ Toevoegen</button>
+    </div>
+
+    <nav id="city-switcher"></nav>
+
+    <section id="main-card">
+      <span id="main-icon"></span>
+      <div id="main-temp-row">
+        <span id="main-temp"></span>
+        <span id="main-unit">°C</span>
+      </div>
+      <p id="main-condition"></p>
+      <p id="main-city"></p>
+    </section>
+
+    <div id="stats-row">
+      <div id="stat-rain-card">
+        <p id="stat-rain-label">Neerslag</p>
+        <p id="stat-rain"></p>
+      </div>
+      <div id="stat-wind-card">
+        <p id="stat-wind-label">Wind</p>
+        <p id="stat-wind"></p>
+      </div>
+      <div id="stat-humidity-card">
+        <p id="stat-humidity-label">Luchtvochtigheid</p>
+        <p id="stat-humidity"></p>
+      </div>
+    </div>
+
+    <section id="forecast">
+      <p id="forecast-title">5-daagse verwachting</p>
+      <ul id="forecast-list"></ul>
+    </section>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
